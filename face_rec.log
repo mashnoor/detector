@@ -1,0 +1,1729 @@
+2020-06-07 17:37:26,129 : From /usr/local/lib/python3.6/dist-packages/face_recognition/face_recognition.py:32: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2020-06-07 17:37:26,213 : From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:4070: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+2020-06-07 17:37:27,094 : Loading weights.
+2020-06-07 17:37:27,095 : Looking for /root/.keras-facenet/20180402-114759/20180402-114759-weights.h5
+2020-06-07 17:37:47,426 : From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:422: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+2020-06-07 17:37:51,008 : Starting new HTTPS connection (1): attendancekeeper.net
+2020-06-07 17:37:51,338 : Exception on /face_rec_multiple/westacebd [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/attendancekeeper/detector/admin.py", line 139, in face_recognition_multiple
+    requests.post(attendance_url, data=data)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 520, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 630, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 440, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 601, in urlopen
+    chunked=chunked)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 346, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 852, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 314, in connect
+    cert_reqs=resolve_cert_reqs(self.cert_reqs),
+  File "/usr/lib/python3/dist-packages/urllib3/util/ssl_.py", line 269, in create_urllib3_context
+    context.options |= options
+  File "/usr/lib/python3.6/ssl.py", line 465, in options
+    super(SSLContext, SSLContext).options.__set__(self, value)
+  File "/usr/lib/python3.6/ssl.py", line 465, in options
+    super(SSLContext, SSLContext).options.__set__(self, value)
+  File "/usr/lib/python3.6/ssl.py", line 465, in options
+    super(SSLContext, SSLContext).options.__set__(self, value)
+  [Previous line repeated 313 more times]
+RecursionError: maximum recursion depth exceeded while calling a Python object
+2020-06-07 17:37:52,775 : Starting new HTTPS connection (1): attendancekeeper.net
+2020-06-07 17:37:53,063 : Starting new HTTPS connection (1): attendancekeeper.net
+2020-06-07 17:37:53,065 : Exception on /face_rec_multiple/westacebd [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/attendancekeeper/detector/admin.py", line 139, in face_recognition_multiple
+    requests.post(attendance_url, data=data)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 520, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 630, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 440, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 601, in urlopen
+    chunked=chunked)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 346, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 852, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 314, in connect
+    cert_reqs=resolve_cert_reqs(self.cert_reqs),
+  File "/usr/lib/python3/dist-packages/urllib3/util/ssl_.py", line 269, in create_urllib3_context
+    context.options |= options
+  File "/usr/lib/python3.6/ssl.py", line 465, in options
+    super(SSLContext, SSLContext).options.__set__(self, value)
+  File "/usr/lib/python3.6/ssl.py", line 465, in options
+    super(SSLContext, SSLContext).options.__set__(self, value)
+  File "/usr/lib/python3.6/ssl.py", line 465, in options
+    super(SSLContext, SSLContext).options.__set__(self, value)
+  [Previous line repeated 313 more times]
+RecursionError: maximum recursion depth exceeded while calling a Python object
+2020-06-07 17:37:53,068 : Exception on /face_rec_multiple/westacebd [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/attendancekeeper/detector/admin.py", line 139, in face_recognition_multiple
+    requests.post(attendance_url, data=data)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 520, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 630, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 440, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 601, in urlopen
+    chunked=chunked)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 346, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 852, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 314, in connect
+    cert_reqs=resolve_cert_reqs(self.cert_reqs),
+  File "/usr/lib/python3/dist-packages/urllib3/util/ssl_.py", line 269, in create_urllib3_context
+    context.options |= options
+  File "/usr/lib/python3.6/ssl.py", line 465, in options
+    super(SSLContext, SSLContext).options.__set__(self, value)
+  File "/usr/lib/python3.6/ssl.py", line 465, in options
+    super(SSLContext, SSLContext).options.__set__(self, value)
+  File "/usr/lib/python3.6/ssl.py", line 465, in options
+    super(SSLContext, SSLContext).options.__set__(self, value)
+  [Previous line repeated 313 more times]
+RecursionError: maximum recursion depth exceeded while calling a Python object
+2020-06-07 17:43:42,553 : From /usr/local/lib/python3.6/dist-packages/face_recognition/face_recognition.py:32: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2020-06-07 17:43:42,650 : From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:4070: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+2020-06-07 17:43:43,969 : Loading weights.
+2020-06-07 17:43:43,974 : Looking for /root/.keras-facenet/20180402-114759/20180402-114759-weights.h5
+2020-06-07 17:44:28,291 : From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:422: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+2020-06-07 17:44:28,292 : Exception on /face_rec/westacebd [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/attendancekeeper/detector/admin.py", line 114, in face_recognition
+    result = fr.predict(getUrl(company_name) + image_name)
+  File "/usr/local/lib/python3.6/dist-packages/face_recognition/face_recognition.py", line 58, in predict
+    for person, confidence, box in self.__predict__(image, threshold=threshold):
+  File "/usr/local/lib/python3.6/dist-packages/face_recognition/face_recognition.py", line 88, in __predict__
+    for encoding, face, box in self.face_encoding(image):
+  File "/usr/local/lib/python3.6/dist-packages/face_recognition/face_recognition.py", line 128, in face_encoding
+    for face, box in self.face_detection(source_image):
+  File "/usr/local/lib/python3.6/dist-packages/face_recognition/face_recognition.py", line 110, in face_detection
+    for face_attributes in self.face_detector.detect_faces(image_to_detect):
+  File "/usr/local/lib/python3.6/dist-packages/mtcnn/mtcnn.py", line 302, in detect_faces
+    result = stage(img, result[0], result[1])
+  File "/usr/local/lib/python3.6/dist-packages/mtcnn/mtcnn.py", line 342, in __stage1
+    out = self._pnet.predict(img_y)
+  File "/usr/local/lib/python3.6/dist-packages/keras/engine/training.py", line 1456, in predict
+    self._make_predict_function()
+  File "/usr/local/lib/python3.6/dist-packages/keras/engine/training.py", line 378, in _make_predict_function
+    **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py", line 3009, in function
+    **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/keras/backend.py", line 3479, in function
+    return GraphExecutionFunction(inputs, outputs, updates=updates, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/keras/backend.py", line 3142, in __init__
+    with ops.control_dependencies([self.outputs[0]]):
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/framework/ops.py", line 5426, in control_dependencies
+    return get_default_graph().control_dependencies(control_inputs)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/framework/ops.py", line 4867, in control_dependencies
+    c = self.as_graph_element(c)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/framework/ops.py", line 3796, in as_graph_element
+    return self._as_graph_element_locked(obj, allow_tensor, allow_operation)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/framework/ops.py", line 3875, in _as_graph_element_locked
+    raise ValueError("Tensor %s is not an element of this graph." % obj)
+ValueError: Tensor Tensor("conv2d_5/BiasAdd:0", shape=(?, ?, ?, 4), dtype=float32) is not an element of this graph.
+2020-06-07 17:44:44,224 : Exception on /face_rec/westacebd [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/attendancekeeper/detector/admin.py", line 114, in face_recognition
+    result = fr.predict(getUrl(company_name) + image_name)
+  File "/usr/local/lib/python3.6/dist-packages/face_recognition/face_recognition.py", line 58, in predict
+    for person, confidence, box in self.__predict__(image, threshold=threshold):
+  File "/usr/local/lib/python3.6/dist-packages/face_recognition/face_recognition.py", line 88, in __predict__
+    for encoding, face, box in self.face_encoding(image):
+  File "/usr/local/lib/python3.6/dist-packages/face_recognition/face_recognition.py", line 128, in face_encoding
+    for face, box in self.face_detection(source_image):
+  File "/usr/local/lib/python3.6/dist-packages/face_recognition/face_recognition.py", line 110, in face_detection
+    for face_attributes in self.face_detector.detect_faces(image_to_detect):
+  File "/usr/local/lib/python3.6/dist-packages/mtcnn/mtcnn.py", line 302, in detect_faces
+    result = stage(img, result[0], result[1])
+  File "/usr/local/lib/python3.6/dist-packages/mtcnn/mtcnn.py", line 342, in __stage1
+    out = self._pnet.predict(img_y)
+  File "/usr/local/lib/python3.6/dist-packages/keras/engine/training.py", line 1456, in predict
+    self._make_predict_function()
+  File "/usr/local/lib/python3.6/dist-packages/keras/engine/training.py", line 378, in _make_predict_function
+    **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py", line 3009, in function
+    **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/keras/backend.py", line 3479, in function
+    return GraphExecutionFunction(inputs, outputs, updates=updates, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/keras/backend.py", line 3142, in __init__
+    with ops.control_dependencies([self.outputs[0]]):
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/framework/ops.py", line 5426, in control_dependencies
+    return get_default_graph().control_dependencies(control_inputs)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/framework/ops.py", line 4867, in control_dependencies
+    c = self.as_graph_element(c)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/framework/ops.py", line 3796, in as_graph_element
+    return self._as_graph_element_locked(obj, allow_tensor, allow_operation)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/framework/ops.py", line 3875, in _as_graph_element_locked
+    raise ValueError("Tensor %s is not an element of this graph." % obj)
+ValueError: Tensor Tensor("conv2d_5/BiasAdd:0", shape=(?, ?, ?, 4), dtype=float32) is not an element of this graph.
+2020-06-07 17:50:22,115 : From /usr/local/lib/python3.6/dist-packages/face_recognition/face_recognition.py:32: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2020-06-07 17:50:22,198 : From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:4070: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+2020-06-07 17:50:23,068 : Loading weights.
+2020-06-07 17:50:23,069 : Looking for /root/.keras-facenet/20180402-114759/20180402-114759-weights.h5
+2020-06-07 17:50:44,499 : From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:422: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+2020-06-07 17:50:47,842 : Company Name: westacebd
+2020-06-07 17:50:47,842 : ID: 5
+2020-06-07 17:50:47,842 : Confidence: 0.7160888016223907
+2020-06-07 17:50:53,658 : Company Name: westacebd
+2020-06-07 17:50:53,658 : ID: 5
+2020-06-07 17:50:53,658 : Confidence: 0.7548584938049316
+2020-06-07 18:01:27,877 : From /usr/local/lib/python3.6/dist-packages/face_recognition/face_recognition.py:32: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2020-06-07 18:01:28,059 : From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:4070: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+2020-06-07 18:01:29,570 : Loading weights.
+2020-06-07 18:01:29,571 : Looking for /root/.keras-facenet/20180402-114759/20180402-114759-weights.h5
+2020-06-07 18:07:36,853 : From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:422: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+2020-06-07 18:07:40,253 : Company Name: westacebd
+2020-06-07 18:07:40,253 : ID: 5
+2020-06-07 18:07:40,253 : Confidence: 0.768632099032402
+2020-06-07 18:07:42,596 : Company Name: westacebd
+2020-06-07 18:07:42,597 : ID: 5
+2020-06-07 18:07:42,597 : Confidence: 0.7786504775285721
+2020-06-07 18:12:25,356 : Company Name: westacebd
+2020-06-07 18:12:25,356 : ID: 5
+2020-06-07 18:12:25,356 : Confidence: 0.7702503651380539
+2020-06-07 18:30:28,900 : Company Name: westacebd
+2020-06-07 18:30:28,901 : ID: 17
+2020-06-07 18:30:28,901 : Confidence: 0.7439477145671844
+2020-06-08 00:52:43,109 : Company Name: westaceusa
+2020-06-08 00:52:43,135 : ID: 6
+2020-06-08 00:52:43,137 : Confidence: 0.7972297966480255
+2020-06-08 00:53:19,211 : Company Name: westaceusa
+2020-06-08 00:53:19,211 : ID: 6
+2020-06-08 00:53:19,212 : Confidence: 0.8616364002227783
+2020-06-08 00:53:42,845 : Company Name: westaceusa
+2020-06-08 00:53:42,846 : ID: 6
+2020-06-08 00:53:42,846 : Confidence: 0.8599840849637985
+2020-06-08 00:54:14,349 : Company Name: westaceusa
+2020-06-08 00:54:14,349 : ID: 6
+2020-06-08 00:54:14,349 : Confidence: 0.8281731456518173
+2020-06-08 00:57:02,215 : Company Name: westaceusa
+2020-06-08 00:57:02,215 : ID: 6
+2020-06-08 00:57:02,215 : Confidence: 0.8475933372974396
+2020-06-08 01:00:23,126 : Company Name: westaceusa
+2020-06-08 01:00:23,126 : ID: 6
+2020-06-08 01:00:23,126 : Confidence: 0.8210698366165161
+2020-06-08 03:44:00,884 : Company Name: westaceusa
+2020-06-08 03:44:00,884 : ID: 6
+2020-06-08 03:44:00,884 : Confidence: 0.7902292907238007
+2020-06-08 04:31:56,421 : Company Name: westacebd
+2020-06-08 04:31:56,422 : ID: 10
+2020-06-08 04:31:56,422 : Confidence: 0.7207029163837433
+2020-06-08 05:40:49,036 : Company Name: westacebd
+2020-06-08 05:40:49,037 : ID: 17
+2020-06-08 05:40:49,037 : Confidence: 0.5669858753681183
+2020-06-08 05:59:15,725 : Company Name: westacebd
+2020-06-08 05:59:15,725 : ID: 16
+2020-06-08 05:59:15,725 : Confidence: 0.6053441166877747
+2020-06-08 05:59:26,035 : Company Name: westacebd
+2020-06-08 05:59:26,036 : ID: 16
+2020-06-08 05:59:26,036 : Confidence: 0.6166666150093079
+2020-06-08 11:54:56,058 : Company Name: westacebd
+2020-06-08 11:54:56,059 : ID: 12
+2020-06-08 11:54:56,059 : Confidence: 0.710165411233902
+2020-06-08 11:56:22,402 : Company Name: westacebd
+2020-06-08 11:56:22,402 : ID: 12
+2020-06-08 11:56:22,402 : Confidence: 0.6288953423500061
+2020-06-08 14:21:09,072 : Company Name: blauerhafen
+2020-06-08 14:21:09,072 : ID: 10
+2020-06-08 14:21:09,072 : Confidence: 0.8136024624109268
+2020-06-08 14:21:48,094 : Company Name: blauerhafen
+2020-06-08 14:21:48,094 : ID: 2
+2020-06-08 14:21:48,094 : Confidence: 0.7511979043483734
+2020-06-08 15:57:07,017 : Company Name: westacebd
+2020-06-08 15:57:07,017 : ID: 10
+2020-06-08 15:57:07,017 : Confidence: 0.7108750939369202
+2020-06-08 17:18:29,054 : Company Name: westacebd
+2020-06-08 17:18:29,054 : ID: UNKNOWN
+2020-06-08 17:18:29,054 : Confidence: 0.0
+2020-06-08 17:18:29,061 : Exception on /face_rec/westacebd [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/attendancekeeper/detector/admin.py", line 120, in face_recognition
+    return str(get_employee_id(company_name, result['predictions'][0]['person']))
+  File "/var/www/attendancekeeper/detector/admin.py", line 47, in get_employee_id
+    cursor.execute(sql)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 'UNKNOWN' in 'where clause'")
+2020-06-08 17:18:39,246 : Company Name: westacebd
+2020-06-08 17:18:39,246 : ID: UNKNOWN
+2020-06-08 17:18:39,246 : Confidence: 0.0
+2020-06-08 17:18:39,248 : Exception on /face_rec/westacebd [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/attendancekeeper/detector/admin.py", line 120, in face_recognition
+    return str(get_employee_id(company_name, result['predictions'][0]['person']))
+  File "/var/www/attendancekeeper/detector/admin.py", line 47, in get_employee_id
+    cursor.execute(sql)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 'UNKNOWN' in 'where clause'")
+2020-06-08 17:19:01,742 : Company Name: westacebd
+2020-06-08 17:19:01,743 : ID: UNKNOWN
+2020-06-08 17:19:01,743 : Confidence: 0.0
+2020-06-08 17:19:01,744 : Exception on /face_rec/westacebd [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/attendancekeeper/detector/admin.py", line 120, in face_recognition
+    return str(get_employee_id(company_name, result['predictions'][0]['person']))
+  File "/var/www/attendancekeeper/detector/admin.py", line 47, in get_employee_id
+    cursor.execute(sql)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 'UNKNOWN' in 'where clause'")
+2020-06-08 17:19:43,828 : Company Name: westacebd
+2020-06-08 17:19:43,828 : ID: UNKNOWN
+2020-06-08 17:19:43,828 : Confidence: 0.0
+2020-06-08 17:19:43,830 : Exception on /face_rec/westacebd [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/attendancekeeper/detector/admin.py", line 120, in face_recognition
+    return str(get_employee_id(company_name, result['predictions'][0]['person']))
+  File "/var/www/attendancekeeper/detector/admin.py", line 47, in get_employee_id
+    cursor.execute(sql)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 'UNKNOWN' in 'where clause'")
+2020-06-08 17:23:30,735 : Company Name: westacebd
+2020-06-08 17:23:30,735 : ID: 17
+2020-06-08 17:23:30,736 : Confidence: 0.6558173298835754
+2020-06-08 19:09:17,377 : Company Name: westaceusa
+2020-06-08 19:09:17,377 : ID: 4
+2020-06-08 19:09:17,377 : Confidence: 0.7506420314311981
+2020-06-08 19:22:45,118 : Exception on /face_rec_multiple/westacebd [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/attendancekeeper/detector/admin.py", line 143, in face_recognition_multiple
+    update_last_seen(company_name, result['predictions'][i]['person'])
+  File "/var/www/attendancekeeper/detector/admin.py", line 74, in update_last_seen
+    cursor.execute(sql)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 'UNKNOWN' in 'where clause'")
+2020-06-08 19:23:44,740 : Exception on /face_rec_multiple/westacebd [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/attendancekeeper/detector/admin.py", line 143, in face_recognition_multiple
+    update_last_seen(company_name, result['predictions'][i]['person'])
+  File "/var/www/attendancekeeper/detector/admin.py", line 74, in update_last_seen
+    cursor.execute(sql)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 'UNKNOWN' in 'where clause'")
+2020-06-08 19:25:53,921 : Exception on /face_rec_multiple/westacebd [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/attendancekeeper/detector/admin.py", line 143, in face_recognition_multiple
+    update_last_seen(company_name, result['predictions'][i]['person'])
+  File "/var/www/attendancekeeper/detector/admin.py", line 74, in update_last_seen
+    cursor.execute(sql)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 'UNKNOWN' in 'where clause'")
+2020-06-08 19:50:58,454 : Company Name: westacebd
+2020-06-08 19:50:58,454 : ID: 16
+2020-06-08 19:50:58,454 : Confidence: 0.6663574874401093
+2020-06-08 19:51:14,270 : Company Name: westacebd
+2020-06-08 19:51:14,270 : ID: 16
+2020-06-08 19:51:14,270 : Confidence: 0.6431090235710144
+2020-06-08 20:48:37,045 : Company Name: westaceusa
+2020-06-08 20:48:37,047 : Exception on /face_rec/westaceusa [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/attendancekeeper/detector/admin.py", line 116, in face_recognition
+    app.logger.info("ID: " + str(result['predictions'][0]['person']))
+IndexError: list index out of range
+2020-06-08 20:51:08,749 : Company Name: westaceusa
+2020-06-08 20:51:08,750 : ID: 5
+2020-06-08 20:51:08,750 : Confidence: 0.7148892283439636
+2020-06-08 21:21:04,614 : Company Name: blauerhafen
+2020-06-08 21:21:04,614 : ID: 2
+2020-06-08 21:21:04,614 : Confidence: 0.7567330896854401
+2020-06-08 21:21:23,744 : Company Name: blauerhafen
+2020-06-08 21:21:23,745 : ID: 10
+2020-06-08 21:21:23,745 : Confidence: 0.7732464075088501
+2020-06-08 21:23:33,965 : Company Name: westacebd
+2020-06-08 21:23:33,965 : ID: 10
+2020-06-08 21:23:33,965 : Confidence: 0.47600144147872925
+2020-06-09 04:39:19,988 : Company Name: westaceusa
+2020-06-09 04:39:19,988 : ID: 5
+2020-06-09 04:39:19,988 : Confidence: 0.735407292842865
+2020-06-09 04:39:50,036 : Company Name: westaceusa
+2020-06-09 04:39:50,036 : ID: 4
+2020-06-09 04:39:50,036 : Confidence: 0.8213946968317032
+2020-06-09 09:21:10,287 : Company Name: westacebd
+2020-06-09 09:21:10,288 : ID: 10
+2020-06-09 09:21:10,288 : Confidence: 0.6889020502567291
+2020-06-09 12:43:23,246 : Company Name: westacebd
+2020-06-09 12:43:23,246 : ID: 12
+2020-06-09 12:43:23,246 : Confidence: 0.7727324962615967
+2020-06-09 12:43:33,950 : Company Name: westacebd
+2020-06-09 12:43:33,950 : ID: 12
+2020-06-09 12:43:33,950 : Confidence: 0.7257289886474609
+2020-06-09 13:28:13,760 : Company Name: blauerhafen
+2020-06-09 13:28:13,761 : ID: 10
+2020-06-09 13:28:13,761 : Confidence: 0.7670225203037262
+2020-06-09 13:40:21,260 : Company Name: blauerhafen
+2020-06-09 13:40:21,260 : ID: 2
+2020-06-09 13:40:21,260 : Confidence: 0.7017942070960999
+2020-06-09 14:58:55,383 : Company Name: blauerhafen
+2020-06-09 14:58:55,384 : ID: 4
+2020-06-09 14:58:55,384 : Confidence: 0.7562514245510101
+2020-06-09 16:45:33,706 : Company Name: westacebd
+2020-06-09 16:45:33,706 : ID: 16
+2020-06-09 16:45:33,706 : Confidence: 0.6757376194000244
+2020-06-09 16:45:51,488 : Company Name: westacebd
+2020-06-09 16:45:51,489 : ID: 16
+2020-06-09 16:45:51,489 : Confidence: 0.6463753581047058
+2020-06-09 18:20:49,726 : Company Name: blauerhafen
+2020-06-09 18:20:49,726 : ID: 2
+2020-06-09 18:20:49,726 : Confidence: 0.7951501160860062
+2020-06-09 18:25:33,938 : Company Name: westacebd
+2020-06-09 18:25:33,938 : ID: 10
+2020-06-09 18:25:33,938 : Confidence: 0.6517853140830994
+2020-06-09 18:39:36,612 : Company Name: westacebd
+2020-06-09 18:39:36,612 : ID: 17
+2020-06-09 18:39:36,612 : Confidence: 0.6377121210098267
+2020-06-09 18:39:50,990 : Company Name: westacebd
+2020-06-09 18:39:50,990 : ID: 17
+2020-06-09 18:39:50,990 : Confidence: 0.6806732714176178
+2020-06-09 19:08:54,001 : Company Name: westaceusa
+2020-06-09 19:08:54,002 : ID: 4
+2020-06-09 19:08:54,002 : Confidence: 0.8026431202888489
+2020-06-09 19:33:29,585 : Company Name: westacebd
+2020-06-09 19:33:29,585 : ID: 18
+2020-06-09 19:33:29,585 : Confidence: 0.6944597363471985
+2020-06-09 19:33:51,467 : Company Name: westacebd
+2020-06-09 19:33:51,468 : ID: 18
+2020-06-09 19:33:51,468 : Confidence: 0.6736181378364563
+2020-06-09 19:59:09,597 : Company Name: blauerhafen
+2020-06-09 19:59:09,597 : ID: 10
+2020-06-09 19:59:09,597 : Confidence: 0.7504135966300964
+2020-06-09 20:05:42,946 : Company Name: blauerhafen
+2020-06-09 20:05:42,946 : ID: 4
+2020-06-09 20:05:42,946 : Confidence: 0.7582750022411346
+2020-06-09 20:57:44,684 : Company Name: westaceusa
+2020-06-09 20:57:44,684 : ID: 6
+2020-06-09 20:57:44,684 : Confidence: 0.7788157016038895
+2020-06-09 21:52:53,028 : Company Name: westacebd
+2020-06-09 21:52:53,028 : ID: 16
+2020-06-09 21:52:53,028 : Confidence: 0.6531124114990234
+2020-06-09 21:53:01,499 : Company Name: westacebd
+2020-06-09 21:53:01,499 : ID: 16
+2020-06-09 21:53:01,499 : Confidence: 0.6600139737129211
+2020-06-10 02:12:04,796 : Company Name: westacebd
+2020-06-10 02:12:04,796 : ID: 12
+2020-06-10 02:12:04,796 : Confidence: 0.648193359375
+2020-06-10 03:42:43,028 : Company Name: westaceusa
+2020-06-10 03:42:43,028 : ID: 6
+2020-06-10 03:42:43,028 : Confidence: 0.7961083948612213
+2020-06-10 03:43:46,865 : Company Name: westaceusa
+2020-06-10 03:43:46,866 : ID: 4
+2020-06-10 03:43:46,866 : Confidence: 0.8071413040161133
+2020-06-10 07:47:27,526 : Company Name: westacebd
+2020-06-10 07:47:27,526 : ID: 10
+2020-06-10 07:47:27,526 : Confidence: 0.7045978903770447
+2020-06-10 12:00:47,294 : Company Name: westacebd
+2020-06-10 12:00:47,294 : ID: 12
+2020-06-10 12:00:47,294 : Confidence: 0.6979902684688568
+2020-06-10 15:34:12,324 : Company Name: blauerhafen
+2020-06-10 15:34:12,325 : ID: 10
+2020-06-10 15:34:12,325 : Confidence: 0.7415304481983185
+2020-06-10 18:12:17,842 : Company Name: westacebd
+2020-06-10 18:12:17,842 : ID: 17
+2020-06-10 18:12:17,842 : Confidence: 0.6727717816829681
+2020-06-10 18:12:35,363 : Company Name: westacebd
+2020-06-10 18:12:35,363 : ID: 17
+2020-06-10 18:12:35,363 : Confidence: 0.6345958113670349
+2020-06-10 19:08:03,185 : Company Name: westaceusa
+2020-06-10 19:08:03,185 : ID: 4
+2020-06-10 19:08:03,185 : Confidence: 0.8062177747488022
+2020-06-10 22:56:16,889 : Company Name: blauerhafen
+2020-06-10 22:56:16,889 : ID: 10
+2020-06-10 22:56:16,889 : Confidence: 0.7453242838382721
+2020-06-11 02:30:19,650 : Company Name: westacebd
+2020-06-11 02:30:19,650 : ID: 12
+2020-06-11 02:30:19,650 : Confidence: 0.6750108301639557
+2020-06-11 03:49:20,906 : Company Name: westaceusa
+2020-06-11 03:49:20,906 : ID: 4
+2020-06-11 03:49:20,906 : Confidence: 0.7660180777311325
+2020-06-11 03:49:45,629 : Company Name: westaceusa
+2020-06-11 03:49:45,630 : ID: 4
+2020-06-11 03:49:45,630 : Confidence: 0.7397952079772949
+2020-06-11 04:36:25,200 : Company Name: westacebd
+2020-06-11 04:36:25,200 : ID: 17
+2020-06-11 04:36:25,201 : Confidence: 0.665893942117691
+2020-06-11 04:45:04,753 : Company Name: westacebd
+2020-06-11 04:45:04,753 : ID: 10
+2020-06-11 04:45:04,753 : Confidence: 0.7266186475753784
+2020-06-11 04:53:43,630 : Company Name: westacebd
+2020-06-11 04:53:43,630 : ID: 6
+2020-06-11 04:53:43,630 : Confidence: 0.7355186343193054
+2020-06-11 04:53:52,513 : Company Name: westacebd
+2020-06-11 04:53:52,513 : ID: 6
+2020-06-11 04:53:52,513 : Confidence: 0.7180463969707489
+2020-06-11 04:54:03,552 : Company Name: westacebd
+2020-06-11 04:54:03,552 : ID: 6
+2020-06-11 04:54:03,552 : Confidence: 0.7399105429649353
+2020-06-11 04:56:34,434 : Company Name: westacebd
+2020-06-11 04:56:34,434 : ID: 6
+2020-06-11 04:56:34,434 : Confidence: 0.7472507655620575
+2020-06-11 04:57:44,082 : Company Name: westacebd
+2020-06-11 04:57:44,082 : ID: 16
+2020-06-11 04:57:44,082 : Confidence: 0.558007150888443
+2020-06-11 04:57:52,304 : Company Name: westacebd
+2020-06-11 04:57:52,304 : ID: 16
+2020-06-11 04:57:52,304 : Confidence: 0.5679505467414856
+2020-06-11 05:01:48,474 : Company Name: westacebd
+2020-06-11 05:01:48,474 : Exception on /face_rec/westacebd [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/attendancekeeper/detector/admin.py", line 116, in face_recognition
+    app.logger.info("ID: " + str(result['predictions'][0]['person']))
+IndexError: list index out of range
+2020-06-11 05:02:06,052 : Company Name: westacebd
+2020-06-11 05:02:06,053 : ID: 17
+2020-06-11 05:02:06,053 : Confidence: 0.7857691198587418
+2020-06-11 05:03:31,016 : Company Name: westacebd
+2020-06-11 05:03:31,017 : ID: 17
+2020-06-11 05:03:31,017 : Confidence: 0.7306200265884399
+2020-06-11 05:04:21,253 : Company Name: westacebd
+2020-06-11 05:04:21,253 : ID: 10
+2020-06-11 05:04:21,253 : Confidence: 0.6514639556407928
+2020-06-11 12:02:34,635 : Company Name: westacebd
+2020-06-11 12:02:34,636 : ID: 12
+2020-06-11 12:02:34,637 : Confidence: 0.7884388566017151
+2020-06-11 12:02:46,898 : Company Name: westacebd
+2020-06-11 12:02:46,899 : ID: 12
+2020-06-11 12:02:46,899 : Confidence: 0.7685243189334869
+2020-06-11 13:59:00,582 : Company Name: westacebd
+2020-06-11 13:59:00,582 : ID: 10
+2020-06-11 13:59:00,582 : Confidence: 0.6602586805820465
+2020-06-11 14:00:28,113 : Company Name: westacebd
+2020-06-11 14:00:28,113 : ID: 10
+2020-06-11 14:00:28,113 : Confidence: 0.6528987884521484
+2020-06-11 15:36:08,752 : Company Name: blauerhafen
+2020-06-11 15:36:08,752 : ID: 2
+2020-06-11 15:36:08,752 : Confidence: 0.7257256209850311
+2020-06-11 17:57:12,314 : Company Name: westacebd
+2020-06-11 17:57:12,314 : ID: 16
+2020-06-11 17:57:12,314 : Confidence: 0.6656515002250671
+2020-06-11 17:57:21,305 : Company Name: westacebd
+2020-06-11 17:57:21,305 : ID: 16
+2020-06-11 17:57:21,305 : Confidence: 0.6602220833301544
+2020-06-11 19:03:43,823 : Company Name: westacebd
+2020-06-11 19:03:43,823 : Exception on /face_rec/westacebd [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/attendancekeeper/detector/admin.py", line 116, in face_recognition
+    app.logger.info("ID: " + str(result['predictions'][0]['person']))
+IndexError: list index out of range
+2020-06-11 19:04:04,811 : Company Name: westacebd
+2020-06-11 19:04:04,811 : ID: UNKNOWN
+2020-06-11 19:04:04,812 : Confidence: 0.0
+2020-06-11 19:04:04,813 : Exception on /face_rec/westacebd [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/attendancekeeper/detector/admin.py", line 120, in face_recognition
+    return str(get_employee_id(company_name, result['predictions'][0]['person']))
+  File "/var/www/attendancekeeper/detector/admin.py", line 47, in get_employee_id
+    cursor.execute(sql)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 'UNKNOWN' in 'where clause'")
+2020-06-11 19:04:19,386 : Company Name: westacebd
+2020-06-11 19:04:19,386 : ID: 17
+2020-06-11 19:04:19,386 : Confidence: 0.6785828471183777
+2020-06-11 19:07:57,190 : Company Name: blauerhafen
+2020-06-11 19:07:57,190 : ID: 2
+2020-06-11 19:07:57,190 : Confidence: 0.7383695244789124
+2020-06-11 19:29:42,303 : Company Name: westaceusa
+2020-06-11 19:29:42,303 : ID: 4
+2020-06-11 19:29:42,304 : Confidence: 0.7830960154533386
+2020-06-11 22:52:44,370 : Company Name: westacebd
+2020-06-11 22:52:44,370 : Exception on /face_rec/westacebd [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/attendancekeeper/detector/admin.py", line 116, in face_recognition
+    app.logger.info("ID: " + str(result['predictions'][0]['person']))
+IndexError: list index out of range
+2020-06-11 22:53:25,659 : Company Name: westacebd
+2020-06-11 22:53:25,660 : Exception on /face_rec/westacebd [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/attendancekeeper/detector/admin.py", line 116, in face_recognition
+    app.logger.info("ID: " + str(result['predictions'][0]['person']))
+IndexError: list index out of range
+2020-06-11 22:54:10,876 : Company Name: westacebd
+2020-06-11 22:54:10,877 : ID: 17
+2020-06-11 22:54:10,877 : Confidence: 0.537299782037735
+2020-06-12 02:27:13,457 : Exception on /face_rec_multiple/westacebd [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/attendancekeeper/detector/admin.py", line 144, in face_recognition_multiple
+    res.append(get_employee_id(company_name, result['predictions'][i]['person']))
+  File "/var/www/attendancekeeper/detector/admin.py", line 55, in get_employee_id
+    return result['idno']
+TypeError: 'NoneType' object is not subscriptable
+2020-06-12 02:28:37,000 : Exception on /face_rec_multiple/westacebd [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/attendancekeeper/detector/admin.py", line 143, in face_recognition_multiple
+    update_last_seen(company_name, result['predictions'][i]['person'])
+  File "/var/www/attendancekeeper/detector/admin.py", line 74, in update_last_seen
+    cursor.execute(sql)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 'UNKNOWN' in 'where clause'")
+2020-06-12 02:28:37,854 : Exception on /face_rec_multiple/westacebd [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/attendancekeeper/detector/admin.py", line 143, in face_recognition_multiple
+    update_last_seen(company_name, result['predictions'][i]['person'])
+  File "/var/www/attendancekeeper/detector/admin.py", line 74, in update_last_seen
+    cursor.execute(sql)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 'UNKNOWN' in 'where clause'")
+2020-06-12 02:28:38,765 : Exception on /face_rec_multiple/westacebd [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/attendancekeeper/detector/admin.py", line 143, in face_recognition_multiple
+    update_last_seen(company_name, result['predictions'][i]['person'])
+  File "/var/www/attendancekeeper/detector/admin.py", line 74, in update_last_seen
+    cursor.execute(sql)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 'UNKNOWN' in 'where clause'")
+2020-06-12 02:28:39,830 : Exception on /face_rec_multiple/westacebd [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/attendancekeeper/detector/admin.py", line 143, in face_recognition_multiple
+    update_last_seen(company_name, result['predictions'][i]['person'])
+  File "/var/www/attendancekeeper/detector/admin.py", line 74, in update_last_seen
+    cursor.execute(sql)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 'UNKNOWN' in 'where clause'")
+2020-06-12 02:29:00,250 : Exception on /face_rec_multiple/westacebd [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/attendancekeeper/detector/admin.py", line 143, in face_recognition_multiple
+    update_last_seen(company_name, result['predictions'][i]['person'])
+  File "/var/www/attendancekeeper/detector/admin.py", line 74, in update_last_seen
+    cursor.execute(sql)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 'UNKNOWN' in 'where clause'")
+2020-06-12 02:29:02,371 : Exception on /face_rec_multiple/westacebd [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/attendancekeeper/detector/admin.py", line 143, in face_recognition_multiple
+    update_last_seen(company_name, result['predictions'][i]['person'])
+  File "/var/www/attendancekeeper/detector/admin.py", line 74, in update_last_seen
+    cursor.execute(sql)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 'UNKNOWN' in 'where clause'")
+2020-06-12 02:29:16,312 : Exception on /face_rec_multiple/westacebd [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/attendancekeeper/detector/admin.py", line 143, in face_recognition_multiple
+    update_last_seen(company_name, result['predictions'][i]['person'])
+  File "/var/www/attendancekeeper/detector/admin.py", line 74, in update_last_seen
+    cursor.execute(sql)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 'UNKNOWN' in 'where clause'")
+2020-06-12 02:29:17,275 : Exception on /face_rec_multiple/westacebd [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/attendancekeeper/detector/admin.py", line 143, in face_recognition_multiple
+    update_last_seen(company_name, result['predictions'][i]['person'])
+  File "/var/www/attendancekeeper/detector/admin.py", line 74, in update_last_seen
+    cursor.execute(sql)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 'UNKNOWN' in 'where clause'")
+2020-06-12 02:29:18,302 : Exception on /face_rec_multiple/westacebd [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/attendancekeeper/detector/admin.py", line 143, in face_recognition_multiple
+    update_last_seen(company_name, result['predictions'][i]['person'])
+  File "/var/www/attendancekeeper/detector/admin.py", line 74, in update_last_seen
+    cursor.execute(sql)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 'UNKNOWN' in 'where clause'")
+2020-06-12 02:29:19,220 : Exception on /face_rec_multiple/westacebd [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/attendancekeeper/detector/admin.py", line 143, in face_recognition_multiple
+    update_last_seen(company_name, result['predictions'][i]['person'])
+  File "/var/www/attendancekeeper/detector/admin.py", line 74, in update_last_seen
+    cursor.execute(sql)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 'UNKNOWN' in 'where clause'")
+2020-06-12 02:29:20,212 : Exception on /face_rec_multiple/westacebd [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/attendancekeeper/detector/admin.py", line 143, in face_recognition_multiple
+    update_last_seen(company_name, result['predictions'][i]['person'])
+  File "/var/www/attendancekeeper/detector/admin.py", line 74, in update_last_seen
+    cursor.execute(sql)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 'UNKNOWN' in 'where clause'")
+2020-06-12 02:29:21,317 : Exception on /face_rec_multiple/westacebd [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/attendancekeeper/detector/admin.py", line 143, in face_recognition_multiple
+    update_last_seen(company_name, result['predictions'][i]['person'])
+  File "/var/www/attendancekeeper/detector/admin.py", line 74, in update_last_seen
+    cursor.execute(sql)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 'UNKNOWN' in 'where clause'")
+2020-06-12 02:29:51,238 : Exception on /face_rec_multiple/westacebd [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/attendancekeeper/detector/admin.py", line 144, in face_recognition_multiple
+    res.append(get_employee_id(company_name, result['predictions'][i]['person']))
+  File "/var/www/attendancekeeper/detector/admin.py", line 55, in get_employee_id
+    return result['idno']
+TypeError: 'NoneType' object is not subscriptable
+2020-06-12 02:44:06,141 : Company Name: westacebd
+2020-06-12 02:44:06,142 : ID: 12
+2020-06-12 02:44:06,142 : Confidence: 0.5858461558818817
+2020-06-12 04:03:00,309 : Company Name: westaceusa
+2020-06-12 04:03:00,309 : ID: 4
+2020-06-12 04:03:00,309 : Confidence: 0.7658107727766037
+2020-06-12 12:46:17,220 : Company Name: westacebd
+2020-06-12 12:46:17,220 : ID: 12
+2020-06-12 12:46:17,220 : Confidence: 0.7598778754472733
+2020-06-12 15:34:19,795 : Company Name: blauerhafen
+2020-06-12 15:34:19,796 : ID: 4
+2020-06-12 15:34:19,796 : Confidence: 0.784297451376915
+2020-06-12 16:58:53,600 : Company Name: westacebd
+2020-06-12 16:58:53,600 : ID: 18
+2020-06-12 16:58:53,600 : Confidence: 0.5928292870521545
+2020-06-12 16:59:06,840 : Company Name: westacebd
+2020-06-12 16:59:06,840 : ID: 18
+2020-06-12 16:59:06,841 : Confidence: 0.5863020420074463
+2020-06-12 16:59:17,989 : Company Name: westacebd
+2020-06-12 16:59:17,989 : ID: 10
+2020-06-12 16:59:17,989 : Confidence: 0.6007988750934601
+2020-06-12 16:59:30,843 : Company Name: westacebd
+2020-06-12 16:59:30,843 : ID: 11
+2020-06-12 16:59:30,844 : Confidence: 0.5564811825752258
+2020-06-12 16:59:35,285 : Company Name: westacebd
+2020-06-12 16:59:35,286 : ID: 11
+2020-06-12 16:59:35,286 : Confidence: 0.5531890094280243
+2020-06-12 16:59:40,791 : Company Name: westacebd
+2020-06-12 16:59:40,791 : ID: 16
+2020-06-12 16:59:40,791 : Confidence: 0.6139741837978363
+2020-06-12 18:07:47,587 : Company Name: westacebd
+2020-06-12 18:07:47,587 : ID: 17
+2020-06-12 18:07:47,587 : Confidence: 0.6981438398361206
+2020-06-12 18:08:09,893 : Company Name: westacebd
+2020-06-12 18:08:09,894 : ID: 17
+2020-06-12 18:08:09,894 : Confidence: 0.6262163519859314
+2020-06-12 18:08:34,232 : Company Name: westacebd
+2020-06-12 18:08:34,232 : ID: 17
+2020-06-12 18:08:34,232 : Confidence: 0.6212653815746307
+2020-06-12 18:08:47,435 : Company Name: westacebd
+2020-06-12 18:08:47,436 : ID: 17
+2020-06-12 18:08:47,436 : Confidence: 0.7275095880031586
+2020-06-12 19:08:25,405 : Company Name: westaceusa
+2020-06-12 19:08:25,405 : ID: 4
+2020-06-12 19:08:25,405 : Confidence: 0.786360040307045
+2020-06-12 19:30:43,237 : Company Name: blauerhafen
+2020-06-12 19:30:43,237 : ID: 4
+2020-06-12 19:30:43,237 : Confidence: 0.6813916265964508
+2020-06-12 20:21:09,144 : Company Name: westaceusa
+2020-06-12 20:21:09,145 : ID: 5
+2020-06-12 20:21:09,145 : Confidence: 0.7006373107433319
+2020-06-12 23:50:59,112 : Company Name: westacebd
+2020-06-12 23:50:59,112 : ID: 16
+2020-06-12 23:50:59,113 : Confidence: 0.659689873456955
+2020-06-13 03:53:15,945 : Company Name: westacebd
+2020-06-13 03:53:15,946 : ID: 12
+2020-06-13 03:53:15,946 : Confidence: 0.5495406091213226
+2020-06-13 03:56:15,774 : Company Name: westaceusa
+2020-06-13 03:56:15,774 : ID: 5
+2020-06-13 03:56:15,774 : Confidence: 0.7149619162082672
+2020-06-13 03:56:28,889 : Company Name: westaceusa
+2020-06-13 03:56:28,889 : ID: 5
+2020-06-13 03:56:28,889 : Confidence: 0.6885780990123749
+2020-06-13 03:56:49,680 : Company Name: westaceusa
+2020-06-13 03:56:49,680 : ID: 4
+2020-06-13 03:56:49,680 : Confidence: 0.7932653278112411
+2020-06-13 03:56:55,814 : Company Name: westaceusa
+2020-06-13 03:56:55,814 : ID: 4
+2020-06-13 03:56:55,814 : Confidence: 0.8156147301197052
+2020-06-13 06:06:21,181 : Company Name: westacebd
+2020-06-13 06:06:21,182 : ID: 10
+2020-06-13 06:06:21,182 : Confidence: 0.6260131895542145
+2020-06-13 06:16:48,622 : Company Name: westacebd
+2020-06-13 06:16:48,622 : ID: 17
+2020-06-13 06:16:48,623 : Confidence: 0.7250078618526459
+2020-06-13 12:22:26,380 : Company Name: westacebd
+2020-06-13 12:22:26,381 : Exception on /face_rec/westacebd [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/attendancekeeper/detector/admin.py", line 116, in face_recognition
+    app.logger.info("ID: " + str(result['predictions'][0]['person']))
+IndexError: list index out of range
+2020-06-13 14:10:43,331 : Company Name: westacebd
+2020-06-13 14:10:43,332 : Exception on /face_rec/westacebd [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/attendancekeeper/detector/admin.py", line 116, in face_recognition
+    app.logger.info("ID: " + str(result['predictions'][0]['person']))
+IndexError: list index out of range
+2020-06-13 14:11:04,737 : Company Name: westacebd
+2020-06-13 14:11:04,737 : ID: 16
+2020-06-13 14:11:04,737 : Confidence: 0.6363056600093842
+2020-06-13 14:11:17,454 : Company Name: westacebd
+2020-06-13 14:11:17,454 : ID: 16
+2020-06-13 14:11:17,454 : Confidence: 0.6390146315097809
+2020-06-13 19:46:34,040 : Company Name: westaceusa
+2020-06-13 19:46:34,040 : ID: 4
+2020-06-13 19:46:34,041 : Confidence: 0.7741741091012955
+2020-06-14 02:15:47,532 : Company Name: westaceusa
+2020-06-14 02:15:47,533 : ID: 4
+2020-06-14 02:15:47,533 : Confidence: 0.7998543530702591
+2020-06-14 02:16:08,509 : Company Name: westaceusa
+2020-06-14 02:16:08,509 : ID: 4
+2020-06-14 02:16:08,509 : Confidence: 0.8281060308218002
+2020-06-14 11:33:24,434 : Company Name: westacebd
+2020-06-14 11:33:24,435 : ID: 12
+2020-06-14 11:33:24,435 : Confidence: 0.6839912831783295
+2020-06-14 17:53:25,993 : Company Name: westacebd
+2020-06-14 17:53:25,993 : ID: 17
+2020-06-14 17:53:25,993 : Confidence: 0.656058669090271
+2020-06-14 18:00:15,510 : Company Name: westacebd
+2020-06-14 18:00:15,510 : ID: 16
+2020-06-14 18:00:15,510 : Confidence: 0.6107364594936371
+2020-06-14 18:00:40,198 : Company Name: westacebd
+2020-06-14 18:00:40,199 : ID: 16
+2020-06-14 18:00:40,199 : Confidence: 0.5806563198566437
+2020-06-14 19:28:53,681 : Company Name: westaceusa
+2020-06-14 19:28:53,681 : ID: 6
+2020-06-14 19:28:53,681 : Confidence: 0.7639012783765793
+2020-06-15 02:37:17,674 : Company Name: westacebd
+2020-06-15 02:37:17,674 : ID: 16
+2020-06-15 02:37:17,674 : Confidence: 0.6404956877231598
+2020-06-15 02:37:30,602 : Company Name: westacebd
+2020-06-15 02:37:30,602 : ID: 16
+2020-06-15 02:37:30,602 : Confidence: 0.6553122103214264
+2020-06-15 02:50:00,762 : Company Name: westacebd
+2020-06-15 02:50:00,762 : ID: 12
+2020-06-15 02:50:00,762 : Confidence: 0.7043190896511078
+2020-06-15 04:10:58,194 : Company Name: westaceusa
+2020-06-15 04:10:58,194 : ID: 6
+2020-06-15 04:10:58,195 : Confidence: 0.8247502744197845
+2020-06-15 04:11:19,845 : Company Name: westaceusa
+2020-06-15 04:11:19,845 : ID: 6
+2020-06-15 04:11:19,845 : Confidence: 0.8297562152147293
+2020-06-15 04:47:46,213 : Company Name: westacebd
+2020-06-15 04:47:46,213 : ID: 17
+2020-06-15 04:47:46,214 : Confidence: 0.7020623981952667
+2020-06-15 12:31:08,053 : Company Name: westacebd
+2020-06-15 12:31:08,054 : ID: 12
+2020-06-15 12:31:08,054 : Confidence: 0.7727102339267731
+2020-06-15 14:03:20,674 : Company Name: blauerhafen
+2020-06-15 14:03:20,674 : ID: 10
+2020-06-15 14:03:20,674 : Confidence: 0.7553403824567795
+2020-06-15 14:17:07,977 : Company Name: blauerhafen
+2020-06-15 14:17:07,977 : ID: 2
+2020-06-15 14:17:07,978 : Confidence: 0.721150130033493
+2020-06-15 17:23:51,412 : Company Name: westacebd
+2020-06-15 17:23:51,412 : ID: 16
+2020-06-15 17:23:51,412 : Confidence: 0.6293217539787292
+2020-06-15 17:24:07,097 : Company Name: westacebd
+2020-06-15 17:24:07,097 : ID: 16
+2020-06-15 17:24:07,097 : Confidence: 0.6232534050941467
+2020-06-15 18:03:44,565 : Company Name: westacebd
+2020-06-15 18:03:44,565 : ID: 17
+2020-06-15 18:03:44,565 : Confidence: 0.6189352571964264
+2020-06-15 19:03:19,474 : Company Name: westaceusa
+2020-06-15 19:03:19,474 : ID: 4
+2020-06-15 19:03:19,474 : Confidence: 0.8317956328392029
+2020-06-15 20:22:06,823 : Company Name: westaceusa
+2020-06-15 20:22:06,824 : Exception on /face_rec/westaceusa [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/attendancekeeper/detector/admin.py", line 116, in face_recognition
+    app.logger.info("ID: " + str(result['predictions'][0]['person']))
+IndexError: list index out of range
+2020-06-15 20:22:33,661 : Company Name: westaceusa
+2020-06-15 20:22:33,661 : ID: 5
+2020-06-15 20:22:33,661 : Confidence: 0.7441737949848175
+2020-06-15 21:17:38,853 : Company Name: blauerhafen
+2020-06-15 21:17:38,854 : ID: 10
+2020-06-15 21:17:38,854 : Confidence: 0.7520600110292435
+2020-06-15 21:19:02,764 : Company Name: blauerhafen
+2020-06-15 21:19:02,765 : ID: 2
+2020-06-15 21:19:02,765 : Confidence: 0.798382893204689
+2020-06-16 01:56:18,697 : Company Name: westacebd
+2020-06-16 01:56:18,697 : ID: 12
+2020-06-16 01:56:18,697 : Confidence: 0.7221796214580536
+2020-06-16 02:26:36,218 : Company Name: westacebd
+2020-06-16 02:26:36,218 : ID: 16
+2020-06-16 02:26:36,218 : Confidence: 0.5810429155826569
+2020-06-16 02:26:55,347 : Company Name: westacebd
+2020-06-16 02:26:55,348 : ID: 16
+2020-06-16 02:26:55,348 : Confidence: 0.6139298975467682
+2020-06-16 04:19:26,842 : Company Name: westaceusa
+2020-06-16 04:19:26,843 : ID: 5
+2020-06-16 04:19:26,843 : Confidence: 0.6553884446620941
+2020-06-16 04:19:41,362 : Company Name: westaceusa
+2020-06-16 04:19:41,362 : ID: 5
+2020-06-16 04:19:41,362 : Confidence: 0.6752328872680664
+2020-06-16 04:20:08,680 : Company Name: westaceusa
+2020-06-16 04:20:08,680 : ID: 4
+2020-06-16 04:20:08,680 : Confidence: 0.7578870207071304
+2020-06-16 05:51:15,713 : Company Name: westacebd
+2020-06-16 05:51:15,714 : ID: UNKNOWN
+2020-06-16 05:51:15,714 : Confidence: 0.0
+2020-06-16 05:51:15,717 : Exception on /face_rec/westacebd [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/attendancekeeper/detector/admin.py", line 120, in face_recognition
+    return str(get_employee_id(company_name, result['predictions'][0]['person']))
+  File "/var/www/attendancekeeper/detector/admin.py", line 47, in get_employee_id
+    cursor.execute(sql)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 'UNKNOWN' in 'where clause'")
+2020-06-16 05:51:53,019 : Company Name: westacebd
+2020-06-16 05:51:53,019 : ID: 17
+2020-06-16 05:51:53,019 : Confidence: 0.7230634987354279
+2020-06-16 11:21:27,045 : From /usr/local/lib/python3.6/dist-packages/face_recognition/face_recognition.py:32: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2020-06-16 11:21:27,147 : From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:4070: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+2020-06-16 11:21:28,189 : Loading weights.
+2020-06-16 11:21:28,189 : Looking for /root/.keras-facenet/20180402-114759/20180402-114759-weights.h5
+2020-06-16 11:22:09,846 : From /usr/local/lib/python3.6/dist-packages/face_recognition/face_recognition.py:32: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2020-06-16 11:22:09,943 : From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:4070: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+2020-06-16 11:22:10,816 : Loading weights.
+2020-06-16 11:22:10,816 : Looking for /root/.keras-facenet/20180402-114759/20180402-114759-weights.h5
+2020-06-16 11:23:40,941 : From /usr/local/lib/python3.6/dist-packages/face_recognition/face_recognition.py:32: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2020-06-16 11:23:41,013 : From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:4070: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+2020-06-16 11:23:41,882 : Loading weights.
+2020-06-16 11:23:41,882 : Looking for /root/.keras-facenet/20180402-114759/20180402-114759-weights.h5
+2020-06-16 11:24:03,429 : From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:422: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+2020-06-16 11:24:06,691 : Company Name: westacebd
+2020-06-16 11:24:06,691 : ID: 5
+2020-06-16 11:24:06,691 : Confidence: 0.7769475877285004
+2020-06-16 11:25:27,806 : Company Name: westacebd
+2020-06-16 11:25:27,806 : ID: 5
+2020-06-16 11:25:27,806 : Confidence: 0.7753427177667618
